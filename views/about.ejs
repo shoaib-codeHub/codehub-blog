@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+<main style="max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; font-family: sans-serif;">
+  <section class="about-hero">
+    <h1 style="font-size: 2.5rem; color: #333;">About MyBlog</h1>
+    <p style="font-size: 1.2rem; color: #666;">
+      Welcome to our corner of the internet! We believe in the power of sharing ideas and building a community through storytelling.
+    </p>
+  </section>
+
+  <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      This platform was built to provide a simple, clean, and distraction-free environment for writers and readers alike. Whether you are sharing technical tutorials or personal reflections, MyBlog is designed to put your content first.
+    </p>
+  </section>
+
+  <section class="team" style="margin-top: 30px;">
+    <h2>The Team</h2>
+    <p>
+      Started as a hobby project in 2025, MyBlog is now maintained by a small group of developers passionate about the open web and EJS templating.
+    </p>
+  </section>
+
+  <section class="contact" style="margin-top: 30px; background: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <h3>Want to get in touch?</h3>
+    <p>Have questions or feedback? Reach out to us at <a href="mailto:hello@myblog.com">hello@myblog.com</a>.</p>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>

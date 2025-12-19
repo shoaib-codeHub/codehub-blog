@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main>
+            <h2>Edit Post</h2>
+            <form action="/update/<%= index %>" method="POST" class="post-creation">
+                <div class="form-group">
+                    <input type="text" name="postTitle" value="<%= post.title %>" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="postContent" rows="4" required><%= post.content %></textarea>
+                </div>
+                <button type="submit">Update Post</button>
+                <a href="/" style="margin-left: 10px; color: #666;">Cancel</a>
+            </form>
+        </main>
+        <%- include('partials/footer') %>
+</body>
+
+</html>
